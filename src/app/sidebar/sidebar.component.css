@@ -1,0 +1,80 @@
+.circle-photo{
+    border-radius: 50%;
+    width: 100%;
+    padding: 40px;
+}
+
+.btn-social{
+    color: white;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.parrafo{
+    color: white;
+    text-align: justify;
+}
+
+.btn{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+.sidebar{
+    background-color: black;
+    height: 100%;
+    padding-bottom:100%;
+}
+
+
+.sidebar h1, .sidebar h2 {
+    color: white;
+    text-align: center;
+}
+
+.btn-github{
+    color:#fff;
+    background-color:#444;
+    border-color:rgba(0,0,0,0.2)
+
+}
+
+.btn-github:hover{
+    color:#fff;
+    background-color:#2b2b2b;
+    border-color:rgba(0,0,0,0.2)
+
+}
+
+.btn-twitter{
+    color:#fff;
+    background-color:#55acee;
+    border-color:rgba(0,0,0,0.2)
+}
+
+.btn-twitter:hover{
+    color:#fff;
+    background-color:#2795e9;
+    border-color:rgba(0,0,0,0.2)
+}
+
+.btn-linkedin{
+    color:#fff;
+    background-color:#007bb6;
+    border-color:rgba(0,0,0,0.2)
+}
+
+.btn-linkedin:hover{
+    color:#fff;
+    background-color:#005983;
+    border-color:rgba(0,0,0,0.2)
+}
+
+.fa{
+    font-size: 14px;
+    display: block;
+}
