@@ -1,4 +1,9 @@
-.col-sm-3{
+.col-sm-3, .col-sm-12{
     padding-left: 0px;
     padding-right: 0px;
+}
+
+
+.content-data{
+    padding-left: 26%;
 }

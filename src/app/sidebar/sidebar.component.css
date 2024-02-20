@@ -4,36 +4,35 @@
     padding: 40px;
 }
 
+.sidebar{
+    background-color: black;
+    height: 100%;
+}
+
 .btn-social{
     color: white;
-    margin: 10px;
+    margin: 5px;
+    margin-left: 30%;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
 
-.parrafo{
-    color: white;
-    text-align: justify;
-}
 
 .btn{
     display: flex;
     align-content: center;
     flex-direction: column;
-}
-
-.sidebar{
-    background-color: black;
-    height: 100%;
-    padding-bottom:100%;
+    width: 70% ;
 }
 
 
 .sidebar h1, .sidebar h2 {
     color: white;
     text-align: center;
+    font-size: 32px;
+    margin-bottom: 0px;
 }
 
 .btn-github{

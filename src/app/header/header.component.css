@@ -1,0 +1,10 @@
+.navbar{
+    position: absolute;
+    display: flex;
+}
+
+.navbar-nav li{
+
+    margin-right: 50px;
+    margin-left: 50px;
+}
