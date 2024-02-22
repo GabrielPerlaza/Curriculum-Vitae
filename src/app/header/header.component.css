@@ -1,10 +1,9 @@
 .navbar{
-    position: absolute;
-    display: flex;
+    position: relative;
+    width: 100%;
 }
 
 .navbar-nav li{
-
     margin-right: 50px;
     margin-left: 50px;
 }
