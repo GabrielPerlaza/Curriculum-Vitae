@@ -1,9 +1,13 @@
-.col-sm-3, .col-sm-12{
+.col-md-3, .col-sm-12{
     padding-left: 0px;
     padding-right: 0px;
 }
 
 
 .content-data{
-    padding-left: 26%;
+    padding-left: 25%;
+}
+
+.col-sm-12{
+    margin-bottom: 0%;
 }

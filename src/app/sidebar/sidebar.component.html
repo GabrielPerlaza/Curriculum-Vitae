@@ -1,4 +1,4 @@
-<div class="sidebar">
+<div id="sidebar" class= "col-md-3">
     <img class="img-responsive center-block circle-photo" src="../../assets/cvOriginalPic_1045531748_bum_vc35b59fb.jpg">
     <h1>Curriculum Vitae</h1>
     <h2>Gabriel Perlaza Mendoza</h2>
@@ -6,7 +6,7 @@
     <br>
     <div class="btn">
         <a href="{{sn.link}}" *ngFor="let sn of social_network" class="btn btn-block btn-social btn-{{sn.icon}}" target="_blank">
-             <span class="fa fa-{{sn.icon}}"></span>{{ sn.name}}
+             <span class="fa fa-{{sn.icon}}">{{sn.name}}</span>
         </a>
     </div>
 

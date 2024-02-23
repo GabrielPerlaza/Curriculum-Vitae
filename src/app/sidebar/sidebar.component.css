@@ -4,9 +4,13 @@
     padding: 40px;
 }
 
-.sidebar{
+#sidebar{
     background-color: black;
     height: 100%;
+    z-index: 1;
+    margin-top: 5px;
+    top: 0;
+    position: absolute;
 }
 
 .btn-social{
@@ -17,6 +21,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
 }
 
 
@@ -24,11 +29,12 @@
     display: flex;
     align-content: center;
     flex-direction: column;
-    width: 70% ;
+    width: 70%;
+    height: 24px;
 }
 
 
-.sidebar h1, .sidebar h2 {
+#sidebar h1, #sidebar h2 {
     color: white;
     text-align: center;
     font-size: 32px;
@@ -71,9 +77,4 @@
     color:#fff;
     background-color:#005983;
     border-color:rgba(0,0,0,0.2)
-}
-
-.fa{
-    font-size: 14px;
-    display: block;
 }
