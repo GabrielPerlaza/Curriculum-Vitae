@@ -10,6 +10,8 @@ import { SkillsComponent } from './skills/skills.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { StudiesComponent } from './studies/studies.component';
 import { PersonaldataComponent } from './personaldata/personaldata.component';
+import { DatosService } from './Servicios/datos.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,9 +27,12 @@ import { PersonaldataComponent } from './personaldata/personaldata.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    DatosService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,83 @@
+{
+"datos_personales": [
+    {
+        "column_display" : "Primer Nombre",
+        "column_value" : "Gabriel"
+    },
+    {
+        "column_display" : "Primer Apellido",
+        "column_value" : "Perlaza"
+    },
+    {
+        "column_display" : "Segundo Nombre",
+        "column_value" : "Sebastian"
+    },
+    {
+        "column_display" : "Segundo Apellido",
+        "column_value" : "Mendoza"
+    },
+    {
+        "column_display" : "Fecha de nacimiento",
+        "column_value" : "05/11/1999"
+    },
+    {
+        "column_display" : "NC",
+        "column_value" : "0927208538"
+    },
+    {
+        "column_display" : "Email",
+        "column_value" : "gabrieldeberes@gmail.com"
+    },
+    {
+        "column_display" : "Estado civil",
+        "column_value" : "Soltero"
+    }
+],
+"estudios" : [
+    {
+        "column_display" : "Educacion primaria y secundaria",
+        "column_value" : "Unidad Educativa Liceo Naval de Guayaquil"
+    },
+    {
+        "column_display" : "Grado de bachiller",
+        "column_value" : "Bachillerato unificado en ciencias general"
+    },
+    {
+        "column_display" : "Educacion universitaria",
+        "column_value" : "Universidad Estatal de Guayaquil"
+    }
+],
+"habilidades" : [
+    {
+        "column_display" : "1.-",
+        "column_value" : "Idioma Ingles"
+    },
+    {
+        "column_display" : "2.-",
+        "column_value" : "Manejo de Office 365"
+    },
+    {
+        "column_display" : "3.-",
+        "column_value" : "Gestión de Base de datos relacionales."
+    },
+    {
+        "column_display" : "4.-",
+        "column_value": "Habilidades en programación"
+    }
+],
+"contacto" : [
+    {
+        "column_display" : "Telefono",
+        "column_value" : "0968666162"
+    },
+    {
+        "column_display" : "Correo Electronico",
+        "column_value" : "gabrieldeberes@gmail.com"
+    },
+    {
+        "column_display" : "Direccion de domicilio",
+        "column_value" : "Guayacanes 4ta Etapa Mz 165 v 15"
+    }
+
+] 
+}
