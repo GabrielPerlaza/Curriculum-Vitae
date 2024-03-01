@@ -1,1 +1,17 @@
-<p>contact works!</p>
+<div class="contacto">
+    <h1>Contacto</h1>
+    <table class="tabla-contacto">
+        <thead>
+            <tr class="tabla_param">
+                <th>&nbsp; Parametro</th>
+                <th>&nbsp; Informacion </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let row of contact" class="tabla_info_contacto">
+                <td>&nbsp;{{row.column_display}}</td>
+                <td>&nbsp;{{row.column_value}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

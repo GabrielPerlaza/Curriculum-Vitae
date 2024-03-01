@@ -35,34 +35,37 @@
 ],
 "estudios" : [
     {
-        "column_display" : "Educacion primaria y secundaria",
-        "column_value" : "Unidad Educativa Liceo Naval de Guayaquil"
+        "rango" : "2004-2018 ",
+        "lugar" : "Unidad Educativa Liceo Naval de Guayaquil",
+        "titulo" : "Bachiller Unificado en Ciencias Generales"
     },
     {
-        "column_display" : "Grado de bachiller",
-        "column_value" : "Bachillerato unificado en ciencias general"
-    },
-    {
-        "column_display" : "Educacion universitaria",
-        "column_value" : "Universidad Estatal de Guayaquil"
+        "rango" : "2020-Actualidad ",
+        "lugar" : "Universidad Estatal de Guayaquil",
+        "titulo" : "Ingenieria en Software"
     }
+   
 ],
 "habilidades" : [
     {
-        "column_display" : "1.-",
-        "column_value" : "Idioma Ingles"
+        "nombre" : "Idioma Ingles",
+        "porcentaje" : "80"
     },
     {
-        "column_display" : "2.-",
-        "column_value" : "Manejo de Office 365"
+        "nombre" : "Manejo de Office ",
+        "porcentaje" : "70"
     },
     {
-        "column_display" : "3.-",
-        "column_value" : "Gestión de Base de datos relacionales."
+        "nombre" : "Conocimientos en SQL",
+        "porcentaje" : "80"
     },
     {
-        "column_display" : "4.-",
-        "column_value": "Habilidades en programación"
+        "nombre" : ".NET",
+        "porcentaje": "80"
+    },
+    {
+        "nombre" : "Angular JS",
+        "porcentaje" : "70"
     }
 ],
 "contacto" : [

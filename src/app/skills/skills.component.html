@@ -1,1 +1,32 @@
-<p>skills works!</p>
+
+
+<div class="habilidades">
+    <div class="progress" *ngFor="let skill of skills" [ngClass]="skill.class_color.color" role="progressbar" aria-label="Animated striped example" aria-valuenow="" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped progress-bar-animated active" [ngClass]="skill.class_color.class_progress" [style.width]="skill.porcentaje + '%'"><h5>{{skill.nombre+'('+skill.porcentaje+'%)'}}</h5></div>
+      </div>
+</div>
+
+
+    <!--
+           <div class="col-md-12">
+            <div class="progress" *ngFor="let skill of skills" [ngClass]="skill.class_color.color">
+                <div class="progress-bar progress-bar-striped active" [ngClass]="skill.class_color.class_progress">
+                    <div class="progress-value {{skill.nombre+'('+skill.porcentaje+'%)'}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+-->
+
+    <!--
+    <h1>Habilidades</h1>
+    <table class="tabla-habilidades">
+        <tbody>
+            <tr *ngFor="let row of skills" class="tabla_info_habilidades">
+                <td>&nbsp;{{row.nombre}}</td>
+                <td>&nbsp;{{row.porcentaje}}</td>
+            </tr>
+        </tbody>
+    </table>
+    --->

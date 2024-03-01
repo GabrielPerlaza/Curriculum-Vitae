@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DatosService } from '../Datos-Service/datos.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-personaldata',
@@ -9,7 +10,7 @@ import { DatosService } from '../Datos-Service/datos.service';
 export class PersonaldataComponent implements OnInit {
  
    
-  private personal_data: any [] = [];
+  public personal_data: any[] = [];
 
   constructor(private dataService : DatosService){
 
@@ -17,9 +18,11 @@ export class PersonaldataComponent implements OnInit {
   
 
   ngOnInit(): void {
-
-    this.dataService.getData().subscribe();
-    
+    this.dataService.getData().subscribe(
+      datos => {
+        this.personal_data = datos['datos_personales'];
+        console.log(datos);
+      });   
   }
 
 }

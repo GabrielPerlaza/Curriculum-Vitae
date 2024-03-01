@@ -1,10 +1,31 @@
 <div class="personal-data">
-    <table class="tabla-personal">
+    <h1>Datos Personales</h1>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Campo</th>
+            <th scope="col">Valor</th>
+          </tr>
+        </thead>
         <tbody>
-            <tr *ngFor="let tabla for ">
-                
+          <tr *ngFor="let row of personal_data; index as i">
+            <td>{{i+1}}</td>
+            <td>{{row.column_display}}</td>
+            <td>{{row.column_value}}</td>
+          </tr>
+      </table>
+</div>
+
+<!---
+
+   <table>
+        <tbody>
+            <tr *ngFor="let row of personal_data">
+                <td>{{row.column_display}}</td>
+                <td>{{row.column_value}}</td>
             </tr>
         </tbody>
-
     </table>
-</div>
+
+-->

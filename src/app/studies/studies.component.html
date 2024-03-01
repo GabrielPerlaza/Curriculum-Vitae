@@ -1,1 +1,19 @@
-<p>studies works!</p>
+<div class="estudios">
+    <h1>Estudios</h1>
+    <table class="tabla-estudios">
+        <thead>
+            <tr class="tabla_param">
+                <th>&nbsp; Año: Inicio y Finalizacion </th>
+                <th>&nbsp; Lugar De Estudio </th>
+                <th>&nbsp; Titulo </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let row of studies" class="tabla_info">
+                <td>&nbsp;{{row.rango}}</td>
+                <td>&nbsp;{{row.lugar}}</td>
+                <td>&nbsp;{{row.titulo}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
