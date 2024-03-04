@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DatosService } from '../Datos-Service/datos.service';
+import { EmailService } from '../EmailService/email.service';
+import { FormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-contact',
@@ -8,17 +11,33 @@ import { DatosService } from '../Datos-Service/datos.service';
 })
 export class ContactComponent {
 
-public contact : any[] = [];
+  private dataForm = {
+    "name" : "",
+    "email" : "",
+    "mensaje" : "" 
+  };
 
-constructor(private dataService : DatosService){}
+  private enviado = false;
+  private correcto = true;
+
+constructor(private emailService: EmailService){}
 
   ngOnInit() : void {
 
-    this.dataService.getData().subscribe(
-      datos => {
-        this.contact = datos['contacto'];
-      });
-
   }
 
+  
+  sendEmail(){
+
+    this.emailService.sendEmail(this.dataForm).subscribe(res => {
+
+
+    
+    }, error => {
+
+      
+    });
+
+    
+  }
 }

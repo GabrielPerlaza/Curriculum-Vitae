@@ -12,6 +12,8 @@ import { StudiesComponent } from './studies/studies.component';
 import { PersonaldataComponent } from './personaldata/personaldata.component';
 import { DatosService } from './Datos-Service/datos.service';
 import { HttpClientModule } from '@angular/common/http';
+import { EmailService } from './EmailService/email.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,14 +26,15 @@ import { HttpClientModule } from '@angular/common/http';
     ExperienceComponent,
     StudiesComponent,
     PersonaldataComponent,
-  ],
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
   providers: [
-    DatosService
+    DatosService,
+    EmailService
   ],
   bootstrap: [AppComponent]
 })

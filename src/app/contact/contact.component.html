@@ -1,17 +1,17 @@
 <div class="contacto">
     <h1>Contacto</h1>
-    <table class="tabla-contacto">
-        <thead>
-            <tr class="tabla_param">
-                <th>&nbsp; Parametro</th>
-                <th>&nbsp; Informacion </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let row of contact" class="tabla_info_contacto">
-                <td>&nbsp;{{row.column_display}}</td>
-                <td>&nbsp;{{row.column_value}}</td>
-            </tr>
-        </tbody>
-    </table>
+<form class="formulario" >
+    <div class="mb-3" >
+        <label>Nombre</label>
+        <input class="form-control" type="text" placeholder="Tu nombre" aria-label="default input example" [(ngModel) ="dataForm.name">
+        <br>
+        <label for="exampleFormControlInput1" class="form-label-email">Correo Electronico</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@example.com" [(ngModel) ="dataForm.email">
+        <br>
+        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Escribe tu mensaje aqui" rows="3" [(ngModel) ="dataForm.mensaje"></textarea>
+        <br>
+        <input class="btn btn-primary" type="submit" (ngSubmit)="sendEmail()" value="Enviar">
+    </div>
+</form>
 </div>
