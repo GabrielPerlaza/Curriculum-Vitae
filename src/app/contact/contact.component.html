@@ -1,17 +1,21 @@
 <div class="contacto">
     <h1>Contacto</h1>
-<form class="formulario" >
-    <div class="mb-3" >
-        <label>Nombre</label>
-        <input class="form-control" type="text" placeholder="Tu nombre" aria-label="default input example" [(ngModel) ="dataForm.name">
-        <br>
-        <label for="exampleFormControlInput1" class="form-label-email">Correo Electronico</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@example.com" [(ngModel) ="dataForm.email">
-        <br>
-        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Escribe tu mensaje aqui" rows="3" [(ngModel) ="dataForm.mensaje"></textarea>
-        <br>
-        <input class="btn btn-primary" type="submit" (ngSubmit)="sendEmail()" value="Enviar">
+<form class="formulario" (ngSubmit)="sendEmail()" >
+    <div class="card">
+        <div class="card-body"> 
+            <div class="mb-3" >
+                <label>Nombre</label>
+                <input class="form-control" [formControl]="formBuild.nombre" type="text" placeholder="Tu nombre" aria-label="default input example">
+                <br>
+                <label for="exampleFormControlInput1" class="form-label-email">Correo Electronico</label>
+                <input type="email" class="form-control"   [formControl]="formBuild.correo" id="exampleFormControlInput1" placeholder="correo@example.com">
+                <br>
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1"  [formControl]="formBuild.mensaje" placeholder="Escribe tu mensaje aqui" rows="3" ></textarea>
+                <br>
+                <input class="btn btn-primary col-md-12" type="submit" value="Enviar">
+            </div>
+        </div>   
     </div>
 </form>
 </div>

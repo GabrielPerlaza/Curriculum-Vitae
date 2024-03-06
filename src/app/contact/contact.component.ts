@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DatosService } from '../Datos-Service/datos.service';
 import { EmailService } from '../EmailService/email.service';
-import { FormsModule } from '@angular/forms';
+import { FormControl, FormGroup, FormsModule, Validators } from '@angular/forms';
 
 
 @Component({
@@ -11,33 +11,31 @@ import { FormsModule } from '@angular/forms';
 })
 export class ContactComponent {
 
-  private dataForm = {
-    "name" : "",
-    "email" : "",
-    "mensaje" : "" 
-  };
+  constructor(private emailService: EmailService){}
 
-  private enviado = false;
-  private correcto = true;
+  ngOnInit() : void {}
 
-constructor(private emailService: EmailService){}
+ 
 
-  ngOnInit() : void {
+    public formBuild = {
+      "nombre" : new FormControl(''),
+      "correo" : new FormControl(''),
+      "mensaje" : new FormControl('')
+    }
+
+    sendEmail(){
+      try{
+        this.emailService.sendEmail(this.formBuild).subscribe();
+      }
+      catch(error){
+        console.log(error);
+      }
+      
+    }
 
   }
+
 
   
-  sendEmail(){
+ 
 
-    this.emailService.sendEmail(this.dataForm).subscribe(res => {
-
-
-    
-    }, error => {
-
-      
-    });
-
-    
-  }
-}

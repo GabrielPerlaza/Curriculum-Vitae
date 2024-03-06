@@ -13,7 +13,7 @@ import { PersonaldataComponent } from './personaldata/personaldata.component';
 import { DatosService } from './Datos-Service/datos.service';
 import { HttpClientModule } from '@angular/common/http';
 import { EmailService } from './EmailService/email.service';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,6 +30,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [
