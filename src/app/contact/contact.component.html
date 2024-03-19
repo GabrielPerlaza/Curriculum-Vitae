@@ -1,19 +1,21 @@
 <div class="contacto">
     <h1>Contacto</h1>
-<form class="formulario" (ngSubmit)="sendEmail()" >
+<form class="formulario" [formGroup]="datos" >
     <div class="card">
         <div class="card-body"> 
             <div class="mb-3" >
                 <label>Nombre</label>
-                <input class="form-control" [formControl]="formBuild.nombre" type="text" placeholder="Tu nombre" aria-label="default input example">
+                <input class="form-control" name="name" formControlName="nombre" type="text" placeholder="Tu nombre" aria-label="default input example">
                 <br>
                 <label for="exampleFormControlInput1" class="form-label-email">Correo Electronico</label>
-                <input type="email" class="form-control"   [formControl]="formBuild.correo" id="exampleFormControlInput1" placeholder="correo@example.com">
+                <input type="email" class="form-control"  name="email"  formControlName="correo"  placeholder="correo@ejemplo.com">
                 <br>
                 <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1"  [formControl]="formBuild.mensaje" placeholder="Escribe tu mensaje aqui" rows="3" ></textarea>
+                <textarea class="form-control"  name="message" formControlName="mensaje" placeholder="Escribe tu mensaje aqui" rows="3" ></textarea>
                 <br>
-                <input class="btn btn-primary col-md-12" type="submit" value="Enviar">
+                <div class="boton">
+                <input class="btn btn-primary col-md-12" type="submit" (click)="envioCorreo()" value="Enviar">
+                </div>
             </div>
         </div>   
     </div>
