@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmailService } from './EmailService/email.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,18 +26,20 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SkillsComponent,
     ExperienceComponent,
     StudiesComponent,
-    PersonaldataComponent,
+    PersonaldataComponent
+    
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule, 
   ],
   providers: [
     DatosService,
-    EmailService
+    EmailService,
+    
   ],
   bootstrap: [AppComponent]
 })

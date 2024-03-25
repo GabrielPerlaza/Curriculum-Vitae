@@ -5,16 +5,16 @@
         <div class="card-body"> 
             <div class="mb-3" >
                 <label>Nombre</label>
-                <input class="form-control" name="name" formControlName="nombre" type="text" placeholder="Tu nombre" aria-label="default input example">
+                <input class="form-control" [(ngModel)]="userNombre" name="name" formControlName="nombre" type="text" placeholder="Tu nombre" aria-label="default input example">
                 <br>
                 <label for="exampleFormControlInput1" class="form-label-email">Correo Electronico</label>
-                <input type="email" class="form-control"  name="email"  formControlName="correo"  placeholder="correo@ejemplo.com">
+                <input type="email" class="form-control" [(ngModel)]="userEmail" name="correo"  formControlName="correo"  placeholder="correo@ejemplo.com">
                 <br>
                 <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                <textarea class="form-control"  name="message" formControlName="mensaje" placeholder="Escribe tu mensaje aqui" rows="3" ></textarea>
+                <textarea class="form-control" [(ngModel)]="userMsg"  name="message" formControlName="mensaje" placeholder="Escribe tu mensaje aqui" rows="3" ></textarea>
                 <br>
                 <div class="boton">
-                <input class="btn btn-primary col-md-12" type="submit" (click)="envioCorreo()" value="Enviar">
+                <input class="btn btn-primary col-md-12" id="miCampo" type="submit" (click)="envioCorreo()" (click)="limpiarCampo()" value="Enviar">
                 </div>
             </div>
         </div>   

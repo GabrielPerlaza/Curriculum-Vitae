@@ -1,18 +1,42 @@
 <div class="estudios">
-    <h1>Estudios</h1>
-    <table class="tabla-estudios">
+    <h2>Estudios</h2>
+    <table class="table">
         <thead>
             <tr class="tabla_param">
-                <th>&nbsp; Año: Inicio y Finalizacion </th>
-                <th>&nbsp; Lugar De Estudio </th>
-                <th>&nbsp; Titulo </th>
+                <th scope="col">#</th>
+                <th scope="col"> Inicio y Finalizacion </th>
+                <th scope="col"> Lugar De Estudio </th>
+                <th scope="col"> Titulo </th>
             </tr>
         </thead>
-        <tbody>
-            <tr *ngFor="let row of studies" class="tabla_info">
-                <td>&nbsp;{{row.rango}}</td>
-                <td>&nbsp;{{row.lugar}}</td>
-                <td>&nbsp;{{row.titulo}}</td>
+        <tbody class="tabla_body">
+            <tr *ngFor="let row of studies; index as i" class="tabla_info" >
+                <td>{{i+1}}</td>
+                <td>{{row.rango}}</td>
+                <td>{{row.lugar}}</td>
+                <td>{{row.titulo}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <hr>
+    <br>
+    <h2>Cursos</h2>
+    <table class="table">
+        <thead>
+            <tr class="tabla_param">
+                <th scope="col"> Inicio y Finalizacion </th>
+                <th scope="col"> Lugar De Estudio </th>
+                <th scope="col"> Titulo </th>
+                <th scope="col">Link</th>
+            </tr>
+        </thead>
+        <tbody class="tabla_body">
+            <tr *ngFor="let row of curso" class="tabla_info" >
+                <td>{{row.rango}}</td>
+                <td>{{row.lugar}}</td>
+                <td>{{row.titulo}}</td>
+                <td>{{row.link}}</td>
             </tr>
         </tbody>
     </table>
