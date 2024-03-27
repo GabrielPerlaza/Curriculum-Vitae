@@ -34,7 +34,7 @@ export class ContactComponent {
       }
 
       console.log(params);
-      this.http.post('http://localhost:3000/envio', params).subscribe(resp =>{
+      this.http.post('https://backend-cv.onrender.com/envio', params).subscribe(resp =>{
         console.log(resp);
         Notiflix.Loading.remove();
         Notiflix.Notify.success('Enviado Correctamente');
